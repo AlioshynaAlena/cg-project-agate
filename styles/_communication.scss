@@ -1,0 +1,20 @@
+.communication {
+    font-size: 1.94rem;
+    font-weight: $font-light;
+    margin: 60px 0;
+    list-style-type: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .communication {
+        font-size: $medium-font;
+        margin: 50px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .communication {
+        font-size: 1.22rem;
+        margin: 40px 0;
+    }
+}

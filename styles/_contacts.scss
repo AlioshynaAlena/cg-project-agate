@@ -1,0 +1,40 @@
+.contacts {
+    background-color: #262626;
+    padding: 100px 0;
+    color: $secondary-color;
+    &__info {
+        font-size: 3.6rem;
+    }
+    &__opening-hours {
+        color: #B1B1B1;
+        font-size: $medium-font;
+        font-weight: $font-light;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .contacts {
+        padding: 80px 0 78px;
+        &__info {
+            font-size: 2.78rem;
+        }
+        &__opening-hours {
+            font-size: 1.11rem;
+            margin-bottom: 47px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contacts {
+        padding: 70px 0 65px;
+        &__info {
+            font-size: 2.22rem;
+        }
+        &__opening-hours {
+            font-size: 1rem;
+            margin-bottom: 35px;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.description {
+    background-color: $section-color;
+    &__text {
+        max-width: 941px;
+        margin: 0 auto;
+        font-size: $large-font;
+        font-weight: $font-light;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .description {
+        &__text {
+            max-width: 602px;
+            font-size: 1.22rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .description {
+        &__text {
+            max-width: 541px;
+            font-size: 1.11rem;
+        }
+    }
+}

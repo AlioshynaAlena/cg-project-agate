@@ -1,0 +1,33 @@
+.la-carte {
+    padding-top: 0;
+    &__autumn {
+        color: $text-color;
+        margin: 30px 0 60px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .la-carte {
+        &__autumn {
+            font-size: 1.22rem;
+            margin-bottom: 48px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .la-carte {
+        padding-left: 52px;
+        padding-right: 24px;
+        &__autumn {
+            font-size: 1.11rem;
+            margin: 20px 0 58px;
+        }
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .la-carte {
+        padding: 60px 12px 60px 40px;
+    }
+}

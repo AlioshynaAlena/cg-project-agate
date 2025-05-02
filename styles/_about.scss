@@ -1,0 +1,43 @@
+.about {
+    padding-top: 218px;
+    padding-bottom: 185px;
+    &__text {
+        margin: 35px 0 60px;
+        color: $secondary-color;
+        font-size: $medium-font;
+    }
+    &__title {
+        color: $secondary-color;
+        font-size: 4.72rem;
+        max-width: 914px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about {
+        padding-top: 183px;
+        padding-bottom: 153px;
+        &__title {
+            font-size: 3.33rem;
+            max-width: 674px;
+        }
+        &__text {
+            margin-bottom: 63px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        padding-top: 171px;
+        padding-bottom: 99px;
+        &__title {
+            font-size: 2.77rem;
+            max-width: 329px;
+        }
+        &__text {
+            margin-bottom: 66px;
+        }
+    }
+}

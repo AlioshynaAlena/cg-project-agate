@@ -1,0 +1,195 @@
+.dish {
+    width: calc((100% - 48px * 2)/3);
+    max-width: 360px;
+    text-align: left;
+    position: relative;
+    &:not(:last-of-type) {
+        margin-right: 48px;
+    }
+    &__image {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__option {
+        margin-top: 35px;
+        &__title {
+            font-size: $large-font;
+            font-weight: $font-normal;
+        }
+        &__description {
+            font-weight: $font-light;
+            margin: 15px 0;
+            font-size: $base-font;
+        }
+        &__price {
+            font-weight: $font-bold;
+            font-size: $base-font;
+        }
+    }
+}
+
+.dish--red::before {
+    @include pseudo(#D33B3B, "HOT!");
+}
+
+.dish--green::before {
+    @include pseudo(#B3E151, "NEW!");
+}
+
+.dish--orange::before {
+    @include pseudo(#E5A434, "HIT!");
+}
+
+@media screen and (max-width: 1240px) {
+    .dish {
+        max-width: 340px;
+        width: calc((100% - 2*30px)/3);
+        &:not(:last-of-type) {
+            margin-right: 30px;
+        }
+        &::before {
+            @include pseudo-1240;
+        }
+        &__option {
+            &__description {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .dish {
+        max-width: 310px;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .dish {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .dish {
+        width: calc((100% - 92px * 2)/3);
+        max-width: 252px;
+        &:not(:last-of-type) {
+            margin-right: 92px;
+        }
+        &::before {
+            @include pseudo-1024;
+        }
+        &__option {
+            margin-top: 15px;
+            &__title {
+                font-size: $medium-font;
+            }
+            &__description {
+                margin: 15px 0 17px;
+                font-size: 0.83rem;
+            }
+            &__price {
+                font-size: 0.83rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .dish {
+        max-width: 220px;
+        width: calc((100% - 2*42px)/3);
+        &:not(:last-of-type) {
+            margin-right: 42px;
+        }
+        &__option {
+            &__description {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .dish {
+        max-width: 200px;
+        width: calc((100% - 2*32px)/3);
+        &:not(:last-of-type) {
+            margin-right: 32px;
+        }
+        &__option {
+            &__description {
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dish {
+        max-width: 720px;
+        width: 100%;
+        display: flex;
+        &:not(:last-of-type) {
+            margin-right: 0;
+            margin-bottom: 58px;
+        }
+        &::before {
+            @include pseudo-768;
+        }
+        &__image {
+            img {
+                max-width: 320px;
+            }
+        }
+        &__option {
+            text-align: left;
+            max-width: 348px;
+            padding-top: 17px;
+            margin: 0 0 0 24px;
+            &__description {
+                font-size: 1.11rem;
+                margin: 20px 0;
+            }
+            &__price {
+                font-size: 1.11rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .dish {
+        max-width: 300px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        &:not(:last-of-type) {
+            margin-bottom: 48px;
+        }
+        &__image {
+            img {
+                max-width: 300px;
+            }
+        }
+        &__option {
+            max-width: 300px;
+            padding: 0;
+            margin: 15px 0 0;
+            &__title {
+                font-size: 1.25rem;
+            }
+            &__description {
+                margin: 15px 0;
+                font-size: 1.125rem;
+            }
+            &__price {
+                font-size: 1.125rem;
+            }
+        }
+    }
+}

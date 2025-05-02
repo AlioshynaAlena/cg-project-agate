@@ -1,0 +1,52 @@
+.menu {
+    font-size: 1.22rem;
+    display: flex;
+    align-items: center;
+    &__link {
+        transition: font-size .8s;
+    }
+    &__link:not(:last-child) {
+        margin-right: 25px;
+    }
+    &__link:not(:last-child)::after {
+        content: "";
+        display: inline-block;
+        background-color: $secondary-color;
+        width: 1.5px;
+        height: 16px;
+        margin-left: 25px;
+    }
+    &__link:hover {
+        color: #FFAC1C;
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .menu {
+        font-size: $base-font;
+        &__link:not(:last-child)::after {
+            height: 13px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .menu {
+        &__link {
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+            &:not(:last-child)::after {
+                margin-left: 10px;
+                width: 1px;
+            }
+        }
+    }
+}

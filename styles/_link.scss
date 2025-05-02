@@ -1,0 +1,21 @@
+.link--white {
+    @include link ($secondary-color);
+}
+
+.link--black {
+    @include link (#000);
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+    .link--white {
+        @include link-1024-768 ($secondary-color);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .link--black {
+        @include link-1024-768 (#000);
+        margin-top: 45px;
+    }
+}

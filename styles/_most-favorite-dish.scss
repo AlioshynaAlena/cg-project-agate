@@ -1,0 +1,16 @@
+.most-favorite-dish {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .most-favorite-dish {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .most-favorite-dish {
+        align-items: center;
+    }
+}

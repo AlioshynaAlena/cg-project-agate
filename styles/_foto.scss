@@ -1,0 +1,25 @@
+.foto {
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+@media screen and (max-width: 1440px) {
+    .foto {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .foto {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .foto {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}

@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: $base-font;
+}
+
+body {
+    font-family: $family-font, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('../fonts/SourceSerifPro-Light.woff2') format('woff2'), url('../fonts/SourceSerifPro-Light.woff') format('woff'), url('../fonts/SourceSerifPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('../fonts/SourceSerifPro-Regular.woff2') format('woff2'), url('../fonts/SourceSerifPro-Regular.woff') format('woff'), url('../fonts/SourceSerifPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('../fonts/SourceSerifPro-Semibold.woff2') format('woff2'), url('../fonts/SourceSerifPro-Semibold.woff') format('woff'), url('../fonts/SourceSerifPro-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('../fonts/SourceSerifPro-Bold.woff2') format('woff2'), url('../fonts/SourceSerifPro-Bold.woff') format('woff'), url('../fonts/SourceSerifPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+section {
+    padding: 100px 0;
+}
+
+@media screen and (max-width: 1024px) {
+    section {
+        padding: 80px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 70px 0;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $secondary-color;
+}
+
+section div p {
+    font-size: $medium-font;
+    font-weight: $font-light;
+}

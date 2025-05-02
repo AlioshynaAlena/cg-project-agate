@@ -1,0 +1,10 @@
+.fa-solid {
+    font-size: 1.55rem;
+    line-height: 70px;
+}
+
+@media screen and (max-width: 768px) {
+    .fa-solid {
+        line-height: 50px;
+    }
+}

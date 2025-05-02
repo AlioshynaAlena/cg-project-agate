@@ -1,0 +1,15 @@
+.logo {
+    font-size: 2.77rem;
+    transition: all .8s;
+    &:hover {
+        color: #FFAC1C;
+        font-size: 3rem;
+        text-shadow: 5px 5px 5px orangered;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .logo {
+        font-size: 1.94rem;
+    }
+}
